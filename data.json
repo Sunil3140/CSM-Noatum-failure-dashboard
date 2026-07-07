@@ -1,0 +1,1210 @@
+[
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "AL DANAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.09) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "SAFEEN AL AMAL",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 210.53 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "SAFEEN AL SAFA",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.57) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 1600.00 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 226.20 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "SUPERFAST BALEARES",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 285.14 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "24-May-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 264.23 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.25) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report.; SCOC(Specific Cylinder Oil Consumption) (1.83) is higher than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "SAFEEN AL SAFA",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.58) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "SUPERFAST BALEARES",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 154.62 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "AL LULU",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.25) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "AL DANAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "25-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "SAFEEN AL SAFA",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.58) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.12) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "SUPERFAST BALEARES",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 128.42 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 203.24 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "26-May-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "27-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "28-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "28-May-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 211.46 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "28-May-26",
+        "vessel": "AL LULU",
+        "report_type": "At Sea",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 2.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-05-28 07:00:00, Curr Start: 2026-05-28 09:00:00) | Report Info: 28-May-26 09:00"
+    },
+    {
+        "week": "Week 1",
+        "date": "28-May-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 205.08 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 215.57 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "SUPERFAST BALEARES",
+        "report_type": "At Sea",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 14.10 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-05-30 12:00:00, Curr Start: 2026-05-29 21:54:00) | Report Info: 29-May-26 21:54"
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 201.92 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.26) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "29-May-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 317.50 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "30-May-26",
+        "vessel": "SAFEEN PEARL",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 168.65 g/kwh)"
+    },
+    {
+        "week": "Week 1",
+        "date": "30-May-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 278.07 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report.; SCOC(Specific Cylinder Oil Consumption) (2.05) is higher than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 1",
+        "date": "30-May-26",
+        "vessel": "SUPERFAST BALEARES",
+        "report_type": "At Sea",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 24.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-05-29 12:00:00, Curr Start: 2026-05-30 12:00:00) | Report Info: 30-May-26 12:00"
+    },
+    {
+        "week": "Week 1",
+        "date": "30-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 1",
+        "date": "30-May-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 211.05 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "31-May-26",
+        "vessel": "RAMHAN",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 231.50 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "31-May-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "31-May-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 215.99 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "31-May-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 218.42 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "01-Jun-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 215.92 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "01-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "SAFEEN PRIZE",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 0.07 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-02 20:36:00, Curr Start: 2026-06-02 20:40:00) | Report Info: 02-Jun-26 20:40"
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 688.93 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 275.19 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "02-Jun-26",
+        "vessel": "UGR AL REEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 232.63 g/kwh); Rule 7 (Reporting Gap): There is a 12.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-02 00:00:00, Curr Start: 2026-06-02 12:00:00) | Report Info: 02-Jun-26 12:00"
+    },
+    {
+        "week": "Week 2",
+        "date": "03-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 262.54 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "03-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "03-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "03-Jun-26",
+        "vessel": "SAFEEN PROSPER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 206.70 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 230.98 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.55) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "RAMHAN",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.29) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "SAFEEN PEARL",
+        "report_type": "Manoeuvring Departure",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 0.10 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-04 21:42:00, Curr Start: 2026-06-04 21:48:00) | Report Info: 04-Jun-26 21:48"
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "SAFEEN PEARL",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 163.64 g/kwh)"
+    },
+    {
+        "week": "Week 2",
+        "date": "04-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "05-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "05-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "05-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.89) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "05-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 236.92 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.57) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 2",
+        "date": "06-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "06-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 225.70 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.56) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 2",
+        "date": "06-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 2",
+        "date": "06-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "TRAVELLER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 94.60 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.92) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "07-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 218.24 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.55) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 219.79 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "TRAVELLER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "Exhaust temp deviation > \u00b150 from avg at Unit 3; Exhaust temp deviation > \u00b150 from avg at Unit 8; SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 118.90 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.28) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "08-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 13.28 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.21) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "TRAVELLER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "Exhaust temp deviation > \u00b150 from avg at Unit 2; Exhaust temp deviation > \u00b150 from avg at Unit 3; Exhaust temp deviation > \u00b150 from avg at Unit 8; SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 113.73 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "AL DANAH",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 0.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-09 12:30:00, Curr Start: 2026-06-09 12:00:00) | Report Info: 09-Jun-26 12:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "09-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.09) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "10-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "10-Jun-26",
+        "vessel": "TRAVELLER",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "Exhaust temp deviation > \u00b150 from avg at Unit 2; Exhaust temp deviation > \u00b150 from avg at Unit 8; SFOC out of 170-240 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 118.98 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "10-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "Manoeuvring Arrival",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 1.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-10 12:00:00, Curr Start: 2026-06-10 13:00:00) | Report Info: 10-Jun-26 13:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "10-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Port",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 0.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-10 15:24:00, Curr Start: 2026-06-10 15:54:00) | Report Info: 10-Jun-26 15:54"
+    },
+    {
+        "week": "Week 3",
+        "date": "10-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "UGR BARCELONA",
+        "report_type": "Manoeuvring Arrival",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 24.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-12 12:00:00, Curr Start: 2026-06-11 12:00:00) | Report Info: 11-Jun-26 12:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.56) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "Manoeuvring Departure",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 4.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-11 12:00:00, Curr Start: 2026-06-11 16:00:00) | Report Info: 11-Jun-26 16:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "11-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 247.92 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "AL DANAH",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "UGR BARCELONA",
+        "report_type": "At Port",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 14.10 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-11 21:54:00, Curr Start: 2026-06-12 12:00:00) | Report Info: 12-Jun-26 12:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "Other",
+        "reason": "SCOC(Specific Cylinder Oil Consumption) (0.50) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "Manoeuvring Arrival",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 12.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-11 17:00:00, Curr Start: 2026-06-12 05:30:00) | Report Info: 12-Jun-26 05:30"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "SAFEEN PRIDE",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 26647.39 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "AL MAQAM",
+        "report_type": "Drifting",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 0.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-12 11:30:00, Curr Start: 2026-06-12 12:00:00) | Report Info: 12-Jun-26 12:00"
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "12-Jun-26",
+        "vessel": "RAMHAN",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 237.65 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "13-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 3",
+        "date": "13-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 253.96 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "13-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 78.69 g/kwh)"
+    },
+    {
+        "week": "Week 3",
+        "date": "13-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported.\n\nKindly confirm that if auxiliary engines are operated for activities including tank cleaning, cargo transfer, ballast operations, or similar tasks, the corresponding estimated fuel consumption (in metric tons) should be entered under the relevant option in the Sub Fuel Consumers section. If a suitable option is not listed, please use the \u201cOthers\u201d category within the Daily Report."
+    },
+    {
+        "week": "Week 4",
+        "date": "14-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "14-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 69.26 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.42) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "14-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "14-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "14-Jun-26",
+        "vessel": "SAFEEN PRIDE",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 239.32 g/kwh); Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.03) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 83.33 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.47) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 239.65 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "AL LULU",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 203.34 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.12) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "15-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.04) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 285.30 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "GULF BARAKAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 15.45 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 1.92) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "Manoeuvring Arrival",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 24.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-17 12:00:00, Curr Start: 2026-06-16 12:00:00) | Report Info: 16-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 201.27 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "16-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 9.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-16 12:00:00, Curr Start: 2026-06-16 02:30:00) | Report Info: 16-Jun-26 02:30"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "SAFEEN AL AMAL",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 203.94 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 225.42 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 337.82 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 48.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-19 12:00:00, Curr Start: 2026-06-17 12:00:00) | Report Info: 17-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 243.91 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "AL SAAD",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "17-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 33.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-16 02:30:00, Curr Start: 2026-06-17 12:00:00) | Report Info: 17-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "18-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 224.49 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "18-Jun-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 336.82 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "18-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 2.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "18-Jun-26",
+        "vessel": "SAFEEN AL AMAL",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 202.93 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "18-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 254.07 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "19-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 24.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-18 12:00:00, Curr Start: 2026-06-19 12:00:00) | Report Info: 19-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "19-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 220.83 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "19-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 260.12 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "19-Jun-26",
+        "vessel": "JINANAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 329.17 g/kwh); SCOC(Specific Cylinder Oil Consumption) (0.00) is lower than normal range (0.6-1.7)"
+    },
+    {
+        "week": "Week 4",
+        "date": "20-Jun-26",
+        "vessel": "SAFEEN AL NOUR",
+        "report_type": "Manoeuvring Departure",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 24.00 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-21 12:00:00, Curr Start: 2026-06-20 12:00:00) | Report Info: 20-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "20-Jun-26",
+        "vessel": "SAFEEN PIONEER",
+        "report_type": "At Sea",
+        "failure_type": "Aux Engine Validation",
+        "reason": "Validation \u2013 2 Aux Engines operating at sea with ME Load greater than 40% (Ratio: 3.00) and no sub consumers reported."
+    },
+    {
+        "week": "Week 4",
+        "date": "20-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "Manoeuvring Departure",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 23.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-21 11:30:00, Curr Start: 2026-06-20 12:00:00) | Report Info: 20-Jun-26 12:00"
+    },
+    {
+        "week": "Week 4",
+        "date": "20-Jun-26",
+        "vessel": "AL SEEF",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 244.69 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "20-Jun-26",
+        "vessel": "AL RAWDAH",
+        "report_type": "At Sea",
+        "failure_type": "SFOC out of range",
+        "reason": "SFOC out of 150-200 g/kwh at sea with ME Rhrs > 12 (Calculated SFOC: 231.83 g/kwh)"
+    },
+    {
+        "week": "Week 4",
+        "date": "21-Jun-26",
+        "vessel": "AL NAHDA",
+        "report_type": "At Anchorage",
+        "failure_type": "Reporting Gap (Rule 7)",
+        "reason": "Rule 7 (Reporting Gap): There is a 15.50 hour gap between the end date and time of previous report and start date and time in current report (Prev End: 2026-06-20 20:00:00, Curr Start: 2026-06-21 11:30:00) | Report Info: 21-Jun-26 11:30"
+    }
+]
