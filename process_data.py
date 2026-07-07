@@ -14,60 +14,87 @@ if not excel_files:
     import sys
     sys.exit(0)
 
+exclude_vessels = ['abu samrah', 'super fast beleares', 'superfast baleares']
+
 dfs = []
 for file in excel_files:
     sheet_dict = pd.read_excel(file, sheet_name=None)
     for sheet_name, df_sheet in sheet_dict.items():
         if 'Week' in sheet_name:
             df_sheet['Assigned Week'] = sheet_name.split('(')[0].strip()
-        dfs.append(df_sheet)
+            dfs.append(df_sheet)
+
+if not dfs:
+    print("No sheets containing 'Week' found in Excel files.")
+    import sys
+    sys.exit(0)
+
 df = pd.concat(dfs, ignore_index=True)
 
-# Ensure start date is string, then parse
+# Parse Start Date
 df['Start Date'] = pd.to_datetime(df['Start Date'], format='mixed', errors='coerce')
 df = df.dropna(subset=['Start Date'])
 
 # Sort by date
 df = df.sort_values(by='Start Date')
-min_date = df['Start Date'].min()
 
 def determine_failure_type(reason):
     reason = str(reason).lower()
-    if 'sfoc out' in reason:
+    if 'sfoc' in reason:
         return 'SFOC out of range'
-    elif 'scoc below' in reason:
+    elif 'scoc' in reason and ('lower' in reason or 'below' in reason or 'less' in reason):
         return 'SCOC below range'
-    elif 'validation' in reason and ('aux' in reason or 'engine' in reason):
+    elif 'scoc' in reason and ('higher' in reason or 'above' in reason or 'more' in reason):
+        return 'SCOC above range'
+    elif 'validation' in reason or ('aux' in reason and 'engine' in reason):
         return 'Aux Engine Validation'
-    elif 'rule 7' in reason or 'reporting gap' in reason:
+    elif 'rule 7' in reason or 'reporting gap' in reason or 'reporting cap' in reason:
         return 'Reporting Gap (Rule 7)'
     else:
         return 'Other'
 
-def assign_week(date):
-    days_diff = (date - min_date).days
-    week_num = min(4, (days_diff // 7) + 1)
-    return f"Week {week_num}"
-
 results = []
+row_id = 0
 
 for _, row in df.iterrows():
-    ftype = determine_failure_type(row['Reason'])
-    week = row.get('Assigned Week')
-    if pd.isna(week):
-        week = assign_week(row['Start Date'])
+    vessel_name = str(row.get('Ship Name', '')).strip().upper()
+    if vessel_name.lower() in exclude_vessels:
+        continue
+        
+    reason_str = str(row.get('Reason', ''))
+    if pd.isna(row.get('Reason')) or not reason_str.strip():
+        continue
+        
+    # Split semicolon-separated reasons
+    reasons = [r.strip() for r in reason_str.split(';') if r.strip()]
     
     # Format date as dd-Mon-yy
     date_str = row['Start Date'].strftime('%d-%b-%y')
     
-    results.append({
-        'week': week,
-        'date': date_str,
-        'vessel': str(row.get('Ship Name', '')).strip().upper(),
-        'report_type': str(row.get('Report Type', '')).strip(),
-        'failure_type': ftype,
-        'reason': str(row.get('Reason', ''))
-    })
+    week = row.get('Assigned Week')
+    if pd.isna(week):
+        # Fallback if no assigned week in sheet name
+        min_date = df['Start Date'].min()
+        days_diff = (row['Start Date'] - min_date).days
+        week_num = min(4, (days_diff // 7) + 1)
+        week = f"Week {week_num}"
+    
+    # Add each non-Other split reason as a separate record with the same row_id
+    for r in reasons:
+        ftype = determine_failure_type(r)
+        if ftype == 'Other':
+            continue
+            
+        results.append({
+            'row_id': row_id,
+            'week': week,
+            'date': date_str,
+            'vessel': vessel_name,
+            'report_type': str(row.get('Report Type', '')).strip(),
+            'failure_type': ftype,
+            'reason': r
+        })
+    row_id += 1
 
 # Write to data.json
 out_path = os.path.join(os.path.dirname(__file__), 'data.json')
@@ -75,3 +102,5 @@ with open(out_path, 'w') as f:
     json.dump(results, f, indent=4)
 
 print(f"Data successfully written to {out_path}")
+print(f"Total split records generated: {len(results)}")
+print(f"Total unique original rows: {row_id}")

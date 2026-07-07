@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Failure Dashboard</title>
+    <title>Fleet Failure Tracker (CSM Noatum)</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- html2pdf.js for exporting logs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
-<<<<<<< HEAD
-=======
         <!-- Header -->
         <div class="dashboard-header">
-            <div class="title-container">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="M4 4l16 16"/><path d="M4 20L20 4"/></svg>
-                <h1 class="dashboard-title">Fleet failure tracker(CSM Noatum)</h1>
+            <div class="header-left">
+                <div class="title-container">
+                    <svg class="ship-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 21h20M19.3 14.8C21.1 13.5 22 11.7 22 10c0-1.7-.9-3.5-2.7-4.8L12 1.3 4.7 5.2C2.9 6.5 2 8.3 2 10c0 1.7.9 3.5 2.7 4.8L12 19.7zM12 1.3v18.4M12 10h10M12 10H2M12 5h7.5M12 5H4.5M12 14.8h6.8M12 14.8H5.2"/>
+                    </svg>
+                    <h1 class="dashboard-title">Fleet failure tracker(CSM Noatum)</h1>
+                </div>
+                <div class="header-subtitle">4-WEEK COMPLIANCE OVERVIEW</div>
             </div>
-            <div class="header-subtitle">
-                <span>4-WEEK COMPLIANCE OVERVIEW</span>
-                <div class="live-monitoring">
+            <div class="header-right">
+                <div class="view-toggle-buttons">
+                    <button id="weeklyToggleBtn" class="toggle-btn active">WEEKLY</button>
+                    <button id="monthlyToggleBtn" class="toggle-btn">MONTHLY</button>
+                </div>
+                <div class="live-monitoring-btn">
                     <span class="pulse-dot"></span> LIVE MONITORING
                 </div>
             </div>
@@ -31,14 +39,25 @@
             <!-- Cards will be populated by JS -->
         </div>
 
->>>>>>> 5fa4f27ab8fe00e71d870d9367ea56baea3f4b03
         <!-- Top Charts -->
         <div class="top-row">
             <div class="card chart-card">
-                <canvas id="barChart1"></canvas>
+                <div class="card-header-clean">
+                    <h3>Weekly Failures Trend</h3>
+                    <p>Total incident volume vs unique vessels affected</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="barChart1"></canvas>
+                </div>
             </div>
             <div class="card chart-card">
-                <canvas id="barChart2"></canvas>
+                <div class="card-header-clean">
+                    <h3>Failure Category Stack</h3>
+                    <p>Composition of failures across the 4-week period</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="barChart2"></canvas>
+                </div>
             </div>
         </div>
 
@@ -58,16 +77,12 @@
                     <table id="matrixTable">
                         <thead>
                             <tr>
-                                <th></th>
-                                <th>Week 1(25 May-31 May)</th>
-                                <th>Week 2(01 Jun-07 Jun)</th>
-                                <th>Week 3(08 Jun-15 Jun)</th>
-<<<<<<< HEAD
-                                <th>Week 4(16 Jun-22 Jun)</th>
-=======
+                                <th>VESSEL</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
                                 <th>Week 4</th>
->>>>>>> 5fa4f27ab8fe00e71d870d9367ea56baea3f4b03
-                                <th>Total</th>
+                                <th>TOTAL</th>
                             </tr>
                         </thead>
                         <tbody></tbody>
@@ -76,8 +91,10 @@
             </div>
             <div class="card aggregate-card">
                 <div class="card-header">
-                    <h3>Aggregate Profile</h3>
-                    <p id="aggregateSubtitle">All 4 weeks combined (0 records)</p>
+                    <div class="header-text">
+                        <h3>Aggregate Profile</h3>
+                        <p id="aggregateSubtitle">All 4 weeks combined (0 records)</p>
+                    </div>
                 </div>
                 <div class="doughnut-layout">
                     <div class="doughnut-container">
@@ -106,21 +123,10 @@
                         <input type="text" id="searchInput" placeholder="Search ship or reason...">
                     </div>
                     <select id="weekFilter">
-                        <option value="All">All Weeks</option>
-<<<<<<< HEAD
-                        <option value="Week 1(25 May-31 May)">Week 1</option>
-                        <option value="Week 2(01 Jun-07 Jun)">Week 2</option>
-                        <option value="Week 3(08 Jun-15 Jun)">Week 3</option>
-                        <option value="Week 4(16 Jun-22 Jun)">Week 4</option>
-=======
-                        <option value="Week 1">Week 1</option>
-                        <option value="Week 2">Week 2</option>
-                        <option value="Week 3">Week 3</option>
-                        <option value="Week 4">Week 4</option>
->>>>>>> 5fa4f27ab8fe00e71d870d9367ea56baea3f4b03
+                        <!-- Populated dynamically -->
                     </select>
                     <select id="shipFilter">
-                        <option value="All">All Ships</option>
+                        <option value="All">All Vessels</option>
                     </select>
                     <select id="typeFilter">
                         <option value="All">All Failure Types</option>
@@ -128,8 +134,12 @@
                         <option value="Reporting Gap (Rule 7)">Reporting Gap (Rule 7)</option>
                         <option value="SFOC out of range">SFOC out of range</option>
                         <option value="SCOC below range">SCOC below range</option>
-                        <option value="Other">Other</option>
+                        <option value="SCOC above range">SCOC above range</option>
                     </select>
+                    <button id="downloadPdf" class="download-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Download PDF
+                    </button>
                     <button id="clearFilters" title="Clear Filters">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon><line x1="22" y1="3" x2="2" y2="21"></line></svg>
                     </button>
