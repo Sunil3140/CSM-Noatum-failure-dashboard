@@ -139,65 +139,137 @@ function setupEventListeners() {
 
     // Download PDF handler
     document.getElementById('downloadPdf').addEventListener('click', () => {
-        // Build a complete table containing all filtered data to print
-        const printContainer = document.createElement('div');
-        printContainer.style.padding = '20px';
-        printContainer.style.backgroundColor = '#0B1121';
-        printContainer.style.color = '#E2E8F0';
-        printContainer.style.fontFamily = 'Inter, sans-serif';
-
-        const printTitle = document.createElement('h2');
-        printTitle.innerText = `CSM Noatum Compliance Failures - ${isMonthly ? 'Monthly View' : 'Weekly View'}`;
-        printTitle.style.marginBottom = '20px';
-        printTitle.style.color = '#FFFFFF';
-        printContainer.appendChild(printTitle);
-
-        const table = document.createElement('table');
-        table.style.width = '100%';
-        table.style.borderCollapse = 'collapse';
-        table.style.fontSize = '12px';
-
-        // Add headers
-        const thead = document.createElement('thead');
-        thead.innerHTML = `
-            <tr style="border-bottom: 2px solid #2D3748; text-align: left; background-color: #151B2B;">
-                <th style="padding: 10px;">WEEK</th>
-                <th style="padding: 10px;">DATE</th>
-                <th style="padding: 10px;">VESSEL</th>
-                <th style="padding: 10px;">REPORT TYPE</th>
-                <th style="padding: 10px;">FAILURE TYPE</th>
-                <th style="padding: 10px;">REASON</th>
-            </tr>
-        `;
-        table.appendChild(thead);
-
-        // Add body
-        const tbody = document.createElement('tbody');
-        filteredData.forEach(d => {
-            const tr = document.createElement('tr');
-            tr.style.borderBottom = '1px solid #2D3748';
-            tr.innerHTML = `
-                <td style="padding: 8px;">${isMonthly ? 'Month 1' : d.week}</td>
-                <td style="padding: 8px;">${d.date}</td>
-                <td style="padding: 8px; font-weight: 600;">${d.vessel}</td>
-                <td style="padding: 8px;">${d.report_type}</td>
-                <td style="padding: 8px;"><span style="color: ${colors[d.failure_type] || '#FFFFFF'}; font-weight: 600;">${d.failure_type}</span></td>
-                <td style="padding: 8px; color: #A0AEC0;">${d.reason}</td>
-            `;
-            tbody.appendChild(tr);
-        });
-        table.appendChild(tbody);
-        printContainer.appendChild(table);
-
-        const opt = {
-            margin:       10,
-            filename:     'Fleet_Failure_Report.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2, useCORS: true, backgroundColor: '#0B1121' },
-            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'landscape' }
-        };
-        html2pdf().set(opt).from(printContainer).save();
+        generateFleetFailurePDF(filteredData);
     });
+}
+
+function generateFleetFailurePDF(filteredData) {
+    console.log(window.jspdf);
+    const { jsPDF } = window.jspdf;
+    console.log(jsPDF);
+    
+    // Create a new document in landscape mode
+    const doc = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: 'a4'
+    });
+    console.log(doc);
+    
+    // Format date and time
+    const dateOptions = { day: 'numeric', month: 'short', year: 'numeric' };
+    const datePart = new Date().toLocaleDateString('en-GB', dateOptions);
+    const timePart = new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', hour12: false });
+    const generatedStr = `Generated: ${datePart}, ${timePart}`;
+
+    // Get filter values
+    const searchVal = document.getElementById('searchInput').value.trim();
+    const weekVal = document.getElementById('weekFilter').value;
+    const shipVal = document.getElementById('shipFilter').value;
+    const typeVal = document.getElementById('typeFilter').value;
+
+    const activeFilters = [];
+    if (searchVal) activeFilters.push(`Search: "${searchVal}"`);
+    if (weekVal !== 'All') {
+        const displayWeek = weekLabels[weekVal] || weekVal;
+        activeFilters.push(`Week: ${displayWeek}`);
+    }
+    if (shipVal !== 'All') activeFilters.push(`Vessel: ${shipVal}`);
+    if (typeVal !== 'All') activeFilters.push(`Failure Type: ${typeVal}`);
+
+    const filtersStr = `Filters: ${activeFilters.length > 0 ? activeFilters.join(' | ') : 'All records (no filters applied)'}`;
+    const totalStr = `Total records: ${filteredData.length}`;
+
+    // Draw Title
+    doc.setFont("Helvetica", "bold");
+    doc.setFontSize(18);
+    doc.setTextColor(15, 23, 42); // #0F172A
+    doc.text("Fleet Failure Tracker — CSM Noatum", 14, 16);
+
+    // Draw Subtitle / Meta information
+    doc.setFont("Helvetica", "normal");
+    doc.setFontSize(9);
+    doc.setTextColor(71, 85, 105); // #475569
+    doc.text(generatedStr, 14, 22);
+    doc.text(filtersStr, 14, 26);
+    doc.text(totalStr, 14, 30);
+
+    // Draw horizontal divider line
+    doc.setDrawColor(226, 232, 240); // #E2E8F0
+    doc.setLineWidth(0.5);
+    doc.line(14, 34, 283, 34);
+
+    // Prepare table rows
+    const tableRows = filteredData.length === 0 
+        ? [['-', '-', '-', '-', '-', 'No records matching the selected filters found.']]
+        : filteredData.map(d => {
+            const weekText = isMonthly ? 'Month 1' : d.week;
+            const ftypesText = (d.failure_types || []).join(', ');
+            return [
+                weekText,
+                d.date,
+                d.vessel,
+                d.report_type,
+                ftypesText,
+                d.reason
+            ];
+        });
+
+    // Generate table directly using jsPDF-AutoTable
+    doc.autoTable({
+        head: [['WEEK', 'DATE', 'VESSEL', 'REPORT TYPE', 'FAILURE TYPES', 'REASON']],
+        body: tableRows,
+        startY: 38,
+        margin: { top: 20, right: 14, bottom: 18, left: 14 },
+        theme: 'striped',
+        styles: {
+            font: 'helvetica',
+            fontSize: 9,
+            cellPadding: 3,
+            lineColor: [226, 232, 240], // #E2E8F0
+            lineWidth: 0.1,
+            valign: 'top',
+            overflow: 'linebreak'
+        },
+        headStyles: {
+            fillColor: [26, 86, 173], // Professional blue #1A56AD
+            textColor: [255, 255, 255],
+            fontSize: 9.5,
+            fontStyle: 'bold',
+            cellPadding: 4
+        },
+        alternateRowStyles: {
+            fillColor: [248, 250, 252] // #F8FAFC
+        },
+        columnStyles: {
+            0: { cellWidth: 22 }, // Week
+            1: { cellWidth: 25 }, // Date
+            2: { cellWidth: 38, fontStyle: 'bold' }, // Vessel
+            3: { cellWidth: 30 }, // Report Type
+            4: { cellWidth: 44 }, // Failure Types
+            5: { cellWidth: 'auto' } // Reason (takes remaining space)
+        }
+    });
+
+    // Add footer on every page after table generation is complete
+    const totalPages = doc.internal.getNumberOfPages();
+    for (let i = 1; i <= totalPages; i++) {
+        doc.setPage(i);
+        doc.setFont("Helvetica", "normal");
+        doc.setFontSize(8);
+        doc.setTextColor(148, 163, 184); // #94A3B8
+        
+        // Left footer
+        doc.text("Fleet Failure Tracker", 14, 202);
+        
+        // Right footer
+        const pageText = `Page ${i} of ${totalPages}`;
+        const textWidth = doc.getTextWidth(pageText);
+        doc.text(pageText, 283 - textWidth, 202);
+    }
+
+    // Save PDF
+    doc.save('Fleet_Failure_Report.pdf');
 }
 
 function applyFilters() {
@@ -220,7 +292,7 @@ function applyFilters() {
         }
         
         const matchShip = shipVal === 'All' || d.vessel === shipVal;
-        const matchType = typeVal === 'All' || d.failure_type === typeVal;
+        const matchType = typeVal === 'All' || (d.failure_types && d.failure_types.includes(typeVal));
         
         return matchSearch && matchWeek && matchShip && matchType;
     });
@@ -324,6 +396,10 @@ function renderCharts() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
             scales: {
                 y: {
                     beginAtZero: true,
@@ -354,17 +430,38 @@ function renderCharts() {
                         boxWidth: 10,
                         usePointStyle: true
                     }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        title: function(context) {
+                            const label = context[0].label;
+                            return weekLabels[label] || label;
+                        },
+                        label: function(context) {
+                            return `${context.dataset.label} : ${context.raw}`;
+                        }
+                    }
                 }
             }
         }
     });
 
-    // Chart 2: Stacked Failure Types - calculated from split records
+    // Chart 2: Stacked Failure Types - calculated from unsplit records containing each type
     const fTypes = Object.keys(colors);
     const datasets2 = fTypes.map(type => {
         return {
             label: type,
-            data: weeks.map(w => dataToUse.filter(d => d.week === w && d.failure_type === type).length),
+            data: weeks.map(w => {
+                let count = 0;
+                dataToUse.filter(d => d.week === w).forEach(d => {
+                    if (d.failure_types && d.failure_types.includes(type)) {
+                        count++;
+                    }
+                });
+                return count;
+            }),
             backgroundColor: colors[type],
             stacked: true
         };
@@ -380,6 +477,10 @@ function renderCharts() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
             scales: {
                 x: {
                     stacked: true,
@@ -404,6 +505,19 @@ function renderCharts() {
                         font: { family: 'Inter', size: 10 },
                         boxWidth: 10
                     }
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        title: function(context) {
+                            const label = context[0].label;
+                            return weekLabels[label] || label;
+                        },
+                        label: function(context) {
+                            return `${context.dataset.label} : ${context.raw}`;
+                        }
+                    }
                 }
             }
         }
@@ -413,8 +527,12 @@ function renderCharts() {
     const typeCounts = {};
     fTypes.forEach(t => typeCounts[t] = 0);
     dataToUse.forEach(d => {
-        if (typeCounts[d.failure_type] !== undefined) {
-            typeCounts[d.failure_type]++;
+        if (d.failure_types) {
+            d.failure_types.forEach(t => {
+                if (typeCounts[t] !== undefined) {
+                    typeCounts[t]++;
+                }
+            });
         }
     });
 
@@ -530,14 +648,19 @@ function renderTable() {
 
     pageData.forEach(d => {
         const row = document.createElement('tr');
-        const badgeClass = badgeClasses[d.failure_type] || 'other';
+        
+        // Render all failure type badges in a row
+        const badgesHtml = (d.failure_types || []).map(t => {
+            const badgeClass = badgeClasses[t] || 'other';
+            return `<span class="badge ${badgeClass}">${t}</span>`;
+        }).join('');
         
         row.innerHTML = `
             <td>${isMonthly ? 'Month 1' : d.week}</td>
             <td>${d.date}</td>
             <td style="font-weight: 600; color: #FFFFFF;">${d.vessel}</td>
             <td>${d.report_type}</td>
-            <td><span class="badge ${badgeClass}">${d.failure_type}</span></td>
+            <td><div style="display: flex; flex-wrap: wrap; gap: 4px;">${badgesHtml}</div></td>
             <td style="max-width: 450px; color: var(--text-muted); line-height: 1.4;">${d.reason}</td>
         `;
         tbody.appendChild(row);

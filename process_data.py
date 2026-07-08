@@ -68,6 +68,13 @@ for _, row in df.iterrows():
     # Split semicolon-separated reasons
     reasons = [r.strip() for r in reason_str.split(';') if r.strip()]
     
+    # Determine all failure types for this row
+    row_failure_types = []
+    for r in reasons:
+        ftype = determine_failure_type(r)
+        if ftype != 'Other' and ftype not in row_failure_types:
+            row_failure_types.append(ftype)
+            
     # Format date as dd-Mon-yy
     date_str = row['Start Date'].strftime('%d-%b-%y')
     
@@ -79,22 +86,22 @@ for _, row in df.iterrows():
         week_num = min(4, (days_diff // 7) + 1)
         week = f"Week {week_num}"
     
-    # Add each non-Other split reason as a separate record with the same row_id
-    for r in reasons:
-        ftype = determine_failure_type(r)
-        if ftype == 'Other':
-            continue
-            
+    # If there are valid failure types, add the single combined record
+    if row_failure_types:
+        # Clean up reason string
+        clean_reason = reason_str.replace('\ufffd', '-').replace('\u2013', '-').replace('\u2014', '-').replace('\n', ' ').strip()
+        clean_reason = ' '.join(clean_reason.split())
+        
         results.append({
             'row_id': row_id,
             'week': week,
             'date': date_str,
             'vessel': vessel_name,
             'report_type': str(row.get('Report Type', '')).strip(),
-            'failure_type': ftype,
-            'reason': r
+            'failure_types': row_failure_types,
+            'reason': clean_reason
         })
-    row_id += 1
+        row_id += 1
 
 # Write to data.json
 out_path = os.path.join(os.path.dirname(__file__), 'data.json')
