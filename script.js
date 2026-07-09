@@ -260,7 +260,7 @@ function generateFleetFailurePDF(filteredData) {
         doc.setTextColor(148, 163, 184); // #94A3B8
         
         // Left footer
-        doc.text("Fleet Failure Tracker", 14, 202);
+        doc.text("Fleet Optimization Tracker", 14, 202);
         
         // Right footer
         const pageText = `Page ${i} of ${totalPages}`;
