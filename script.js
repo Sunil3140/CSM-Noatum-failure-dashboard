@@ -260,7 +260,7 @@ function generateFleetDeviationPDF(filteredData) {
         doc.setTextColor(148, 163, 184); // #94A3B8
         
         // Left footer
-        doc.text("Fleet Optimization Tracker", 14, 202);
+        doc.text("Fleet Optimization Deviation Tracker", 14, 202);
         
         // Right footer
         const pageText = `Page ${i} of ${totalPages}`;
