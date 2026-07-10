@@ -139,11 +139,11 @@ function setupEventListeners() {
 
     // Download PDF handler
     document.getElementById('downloadPdf').addEventListener('click', () => {
-        generateFleetFailurePDF(filteredData);
+        generateFleetDeviationPDF(filteredData);
     });
 }
 
-function generateFleetFailurePDF(filteredData) {
+function generateFleetDeviationPDF(filteredData) {
     console.log(window.jspdf);
     const { jsPDF } = window.jspdf;
     console.log(jsPDF);
@@ -175,7 +175,7 @@ function generateFleetFailurePDF(filteredData) {
         activeFilters.push(`Week: ${displayWeek}`);
     }
     if (shipVal !== 'All') activeFilters.push(`Vessel: ${shipVal}`);
-    if (typeVal !== 'All') activeFilters.push(`Failure Type: ${typeVal}`);
+    if (typeVal !== 'All') activeFilters.push(`Deviation Type: ${typeVal}`);
 
     const filtersStr = `Filters: ${activeFilters.length > 0 ? activeFilters.join(' | ') : 'All records (no filters applied)'}`;
     const totalStr = `Total records: ${filteredData.length}`;
@@ -184,7 +184,7 @@ function generateFleetFailurePDF(filteredData) {
     doc.setFont("Helvetica", "bold");
     doc.setFontSize(18);
     doc.setTextColor(15, 23, 42); // #0F172A
-    doc.text("Fleet Failure Tracker — CSM Noatum", 14, 16);
+    doc.text("Fleet Deviation Tracker — CSM Noatum", 14, 16);
 
     // Draw Subtitle / Meta information
     doc.setFont("Helvetica", "normal");
@@ -217,7 +217,7 @@ function generateFleetFailurePDF(filteredData) {
 
     // Generate table directly using jsPDF-AutoTable
     doc.autoTable({
-        head: [['WEEK', 'DATE', 'VESSEL', 'REPORT TYPE', 'FAILURE TYPES', 'REASON']],
+        head: [['WEEK', 'DATE', 'VESSEL', 'REPORT TYPE', 'DEVIATION TYPES', 'REASON']],
         body: tableRows,
         startY: 38,
         margin: { top: 20, right: 14, bottom: 18, left: 14 },
@@ -246,7 +246,7 @@ function generateFleetFailurePDF(filteredData) {
             1: { cellWidth: 25 }, // Date
             2: { cellWidth: 38, fontStyle: 'bold' }, // Vessel
             3: { cellWidth: 30 }, // Report Type
-            4: { cellWidth: 44 }, // Failure Types
+            4: { cellWidth: 44 }, // Deviation Types
             5: { cellWidth: 'auto' } // Reason (takes remaining space)
         }
     });
@@ -269,7 +269,7 @@ function generateFleetFailurePDF(filteredData) {
     }
 
     // Save PDF
-    doc.save('Fleet_Failure_Report.pdf');
+    doc.save('Fleet_Deviation_Report.pdf');
 }
 
 function applyFilters() {
@@ -355,7 +355,7 @@ function renderCharts() {
     const weeks = getActiveWeeks();
     const dataToUse = getProcessedFilteredData();
 
-    // Chart 1: Total Failures (Bar) vs Unique Ships (Line) - calculated from unique reports (row_id)
+    // Chart 1: Fleet_Deviation_Report.pdf (Bar) vs Unique Ships (Line) - calculated from unique reports (row_id)
     const barData1 = weeks.map(w => {
         const dataForWeek = dataToUse.filter(d => d.week === w);
         return new Set(dataForWeek.map(d => d.row_id)).size;
@@ -373,7 +373,7 @@ function renderCharts() {
             labels: weeks.map(w => w === 'Month 1' ? 'Month 1' : w),
             datasets: [
                 {
-                    label: 'Total Failures',
+                    label: 'Total Deviations',
                     data: barData1,
                     backgroundColor: '#3B82F6',
                     borderRadius: 4,
@@ -405,7 +405,7 @@ function renderCharts() {
                     beginAtZero: true,
                     grid: { color: '#2D3748' },
                     ticks: { color: '#A0AEC0', font: { family: 'Inter' } },
-                    title: { display: true, text: 'No. of failures', color: '#A0AEC0', font: { family: 'Inter', size: 11 } }
+                    title: { display: true, text: 'No. of deviations', color: '#A0AEC0', font: { family: 'Inter', size: 11 } }
                 },
                 y1: {
                     beginAtZero: true,
@@ -448,7 +448,7 @@ function renderCharts() {
         }
     });
 
-    // Chart 2: Stacked Failure Types - calculated from unsplit records containing each type
+    // Chart 2: Stacked Deviation Types - calculated from unsplit records containing each type
     const fTypes = Object.keys(colors);
     const datasets2 = fTypes.map(type => {
         return {
@@ -493,7 +493,7 @@ function renderCharts() {
                     beginAtZero: true,
                     grid: { color: '#2D3748' },
                     ticks: { color: '#A0AEC0', font: { family: 'Inter' } },
-                    title: { display: true, text: 'No. of failures', color: '#A0AEC0', font: { family: 'Inter', size: 11 } }
+                    title: { display: true, text: 'No. of deviations', color: '#A0AEC0', font: { family: 'Inter', size: 11 } }
                 }
             },
             plugins: {
@@ -649,7 +649,7 @@ function renderTable() {
     pageData.forEach(d => {
         const row = document.createElement('tr');
         
-        // Render all failure type badges in a row
+        // Render all Deviation Type badges in a row
         const badgesHtml = (d.failure_types || []).map(t => {
             const badgeClass = badgeClasses[t] || 'other';
             return `<span class="badge ${badgeClass}">${t}</span>`;
