@@ -355,7 +355,7 @@ function renderCharts() {
     const weeks = getActiveWeeks();
     const dataToUse = getProcessedFilteredData();
 
-    // Chart 1: Fleet_Deviation_Report.pdf (Bar) vs Unique Ships (Line) - calculated from unique reports (row_id)
+    // Chart 1: Fleet_Deviations(Bar) vs Unique Ships (Line) - calculated from unique reports (row_id)
     const barData1 = weeks.map(w => {
         const dataForWeek = dataToUse.filter(d => d.week === w);
         return new Set(dataForWeek.map(d => d.row_id)).size;
