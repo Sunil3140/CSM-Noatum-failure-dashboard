@@ -6,7 +6,7 @@ echo ===================================================
 echo.
 
 :: Check if Python is installed
-python --version >nul 2>&1
+py --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo [ERROR] Python is not installed or not in system PATH.
     echo Please install Python 3.x and check the "Add Python to PATH" box.
@@ -17,7 +17,7 @@ if %errorlevel% neq 0 (
 
 :: Install required python packages
 echo [1/3] Checking and installing Python dependencies...
-python -m pip install pandas openpyxl
+py -m pip install pandas openpyxl
 echo.
 
 :: Run data processing script
@@ -25,7 +25,7 @@ echo [2/3] Processing raw Excel files...
 if not exist "data" (
     mkdir "data"
 )
-python process_data.py
+py process_data.py
 if %errorlevel% neq 0 (
     echo.
     echo [ERROR] Failed to process Excel files.
@@ -47,4 +47,4 @@ echo.
 start http://localhost:8000
 
 :: Start the Python HTTP server
-python -m http.server 8000
+py -m http.server 8000

@@ -22,6 +22,10 @@ for file in excel_files:
     for sheet_name, df_sheet in sheet_dict.items():
         if 'Week' in sheet_name:
             df_sheet['Assigned Week'] = sheet_name.split('(')[0].strip()
+            if '(' in sheet_name and ')' in sheet_name:
+                df_sheet['Week Label'] = sheet_name[sheet_name.find('(')+1:sheet_name.find(')')].strip()
+            else:
+                df_sheet['Week Label'] = ""
             dfs.append(df_sheet)
 
 if not dfs:
@@ -95,6 +99,7 @@ for _, row in df.iterrows():
         results.append({
             'row_id': row_id,
             'week': week,
+            'week_label': str(row.get('Week Label', '')),
             'date': date_str,
             'vessel': vessel_name,
             'report_type': str(row.get('Report Type', '')).strip(),
@@ -103,10 +108,12 @@ for _, row in df.iterrows():
         })
         row_id += 1
 
-# Write to data.json
-out_path = os.path.join(os.path.dirname(__file__), 'data.json')
+# Write to data.js
+out_path = os.path.join(os.path.dirname(__file__), 'data.js')
 with open(out_path, 'w') as f:
+    f.write('var rawData = ')
     json.dump(results, f, indent=4)
+    f.write(';\n')
 
 print(f"Data successfully written to {out_path}")
 print(f"Total split records generated: {len(results)}")
