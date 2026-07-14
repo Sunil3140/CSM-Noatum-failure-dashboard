@@ -1,4 +1,4 @@
-# Fleet Failure Tracker (CSM Noatum)
+# Fleet Deviations Tracker (CSM Noatum)
 
 An interactive dashboard for tracking compliance failures and analyzing weekly/monthly trends in fleet performance. This app consists of a Python-based backend script to process Excel data files and a clean, responsive frontend to visualize the statistics, vessel matrix, and failure logs.
 
