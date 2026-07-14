@@ -14,7 +14,7 @@ const badgeClasses = {
     'SCOC above range': 'scoc-above'
 };
 
-let rawData = [];
+// rawData is now loaded globally from data.js
 let filteredData = [];
 let currentPage = 1;
 const rowsPerPage = 10;
@@ -24,24 +24,77 @@ let chart1 = null;
 let chart2 = null;
 let chartDoughnut = null;
 
-const weekLabels = {
-    'Week 1': 'Week 1 (25 May–31 May)',
-    'Week 2': 'Week 2 (01 Jun–07 Jun)',
-    'Week 3': 'Week 3 (08 Jun–15 Jun)',
-    'Week 4': 'Week 4 (16 Jun–22 Jun)',
-    'Month 1': 'Month 1 (25 May–22 Jun)'
-};
+let weekLabels = {};
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('data.json')
-        .then(res => res.json())
-        .then(data => {
-            rawData = data;
-            filteredData = [...rawData];
-            initDashboard();
-        })
-        .catch(err => console.error("Failed to load data:", err));
+    // Check if rawData is available (loaded from data.js)
+    if (typeof rawData !== 'undefined') {
+        processRawData();
+        filteredData = [...rawData];
+        initDashboard();
+    } else {
+        console.error("Failed to load data: rawData is not defined. Ensure data.js is included.");
+    }
 });
+
+function parseCustomDate(dateStr) {
+    const parts = dateStr.split('-');
+    const months = { 'Jan':0, 'Feb':1, 'Mar':2, 'Apr':3, 'May':4, 'Jun':5, 'Jul':6, 'Aug':7, 'Sep':8, 'Oct':9, 'Nov':10, 'Dec':11 };
+    return new Date(2000 + parseInt(parts[2]), months[parts[1]], parseInt(parts[0]));
+}
+
+function formatD(date) {
+    const m = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `${date.getDate().toString().padStart(2, '0')} ${m[date.getMonth()]}`;
+}
+
+function processRawData() {
+    const uniqueWeeks = [...new Set(rawData.map(d => d.week))].sort((a, b) => {
+        return parseInt(a.split(' ')[1]) - parseInt(b.split(' ')[1]);
+    });
+    
+    const last4 = uniqueWeeks.slice(-4);
+    const weekMap = {};
+    last4.forEach((w, i) => weekMap[w] = `Week ${i + 1}`);
+    
+    rawData = rawData.filter(d => last4.includes(d.week)).map(d => ({
+        ...d,
+        week: weekMap[d.week]
+    }));
+    
+    weekLabels = {};
+    ['Week 1', 'Week 2', 'Week 3', 'Week 4'].forEach(w => {
+        const weekData = rawData.filter(d => d.week === w);
+        if (weekData.length > 0) {
+            let explicitLabel = weekData.find(d => d.week_label && d.week_label.trim() !== '')?.week_label;
+            
+            // Manual override for user requested exact string
+            if (explicitLabel === '21 Jun-28 Jun') {
+                explicitLabel = '23 Jun - 29 Jun';
+            }
+
+            if (explicitLabel) {
+                weekLabels[w] = `${w} (${explicitLabel})`;
+            } else {
+                const dates = weekData.map(d => parseCustomDate(d.date));
+                const minDate = new Date(Math.min(...dates));
+                const maxDate = new Date(Math.max(...dates));
+                weekLabels[w] = `${w} (${formatD(minDate)}–${formatD(maxDate)})`;
+            }
+        } else {
+            weekLabels[w] = w;
+        }
+    });
+
+    if (rawData.length > 0) {
+        const dates = rawData.map(d => parseCustomDate(d.date));
+        const minDate = new Date(Math.min(...dates));
+        const maxDate = new Date(Math.max(...dates));
+        weekLabels['Month 1'] = `Month 1 (${formatD(minDate)}–${formatD(maxDate)})`;
+    } else {
+        weekLabels['Month 1'] = 'Month 1';
+    }
+}
 
 function initDashboard() {
     populateVesselFilter();
